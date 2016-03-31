@@ -1,0 +1,18 @@
+- http://schema.org/InteractAction
+    - http://schema.org/CommunicateAction
+        - http://schema.org/AskAction
+        - http://schema.org/CommentAction
+        - http://schema.org/InformAction
+        - http://schema.org/ReplyAction
+        -
+
+- http://schema.org/Question
+- http://schema.org/BusTrip
+- http://schema.org/Place
+    - http://schema.org/AdministrativeArea
+        - http://schema.org/City
+        - http://schema.org/Country
+        - http://schema.org/State
+    - http://schema.org/CivicStructure
+        - http://schema.org/BusStation
+        - http://schema.org/BusStop

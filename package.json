@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/fczuardi/roboviario/issues"
   },
-  "homepage": "https://github.com/fczuardi/roboviario#readme"
+  "homepage": "https://github.com/fczuardi/roboviario#readme",
+  "devDependencies": {
+    "material-design-icons": "^2.2.3"
+  }
 }

@@ -1,0 +1,28 @@
+{
+  "name": "roboviario",
+  "version": "0.1.0",
+  "description": "A small demo of chat interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fczuardi/roboviario.git"
+  },
+  "keywords": [
+    "brasil",
+    "chat",
+    "robot",
+    "bot",
+    "calamar",
+    "bus",
+    "trip"
+  ],
+  "author": "Fabricio C Zuardi",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fczuardi/roboviario/issues"
+  },
+  "homepage": "https://github.com/fczuardi/roboviario#readme"
+}

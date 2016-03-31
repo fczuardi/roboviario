@@ -1,3 +1,10 @@
+
+## Icons
+
+- https://design.google.com/icons/
+
+## Schemas
+
 - http://schema.org/InteractAction
     - http://schema.org/CommunicateAction
         - http://schema.org/AskAction

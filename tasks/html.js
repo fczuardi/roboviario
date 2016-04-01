@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 require('shelljs/global');
 const pkg = require('../package.json');
+const iframeURLs = [
+    'https://fczuardi.github.io/roboviario/iframe.html'
+];
 
 const mainCSS = cat([
     './dist/www/lib/css/material-icons.css',
@@ -26,6 +29,11 @@ sed('-i',
 sed('-i',
     /<style amp-custom>/,
     '<style amp-custom>\n' + mainCSS,
+    './dist/www/index.html'
+);
+sed('-i',
+    /IFRAME_URL/,
+    iframeURLs[0],
     './dist/www/index.html'
 );
 //iframe

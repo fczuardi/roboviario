@@ -3,7 +3,8 @@ require('shelljs/global');
 
 cp([
     '.gitignore',
-    'LICENSE'
+    'LICENSE',
+    'CNAME'
 ],
     './dist/www/.'
 );

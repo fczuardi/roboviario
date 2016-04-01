@@ -11,20 +11,27 @@
             "@type": "MobileApplication",
             "softwareVersion": "NPM_VERSION",
             "image": [
-                "logo.png"
+                "./lib/img/logo.png"
             ]
         }
         </script>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         <style amp-custom>
         </style>
+        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
     </head>
     <body>
         <div class="content" id="main-content">
             <h1>Demo</h1>
-            <i class="material-icons">face</i>
-            <i class="material-icons">directions_bus</i>
+            <!-- <div id="page-top"></div> -->
+            <amp-iframe width=300 height=300
+                sandbox="allow-scripts allow-same-origin allow-popups"
+                layout="responsive"
+                frameborder="0"
+                src="https://fczuardi.github.io/roboviario/iframe.html">
+                <amp-img layout="fill" src="./lib/img/logo.svg" placeholder></amp-img>
+            </amp-iframe>
             <footer>
                 <small>
                     <!-- Copyright (c) Fabricio C Zuardi 2016 <a href="https://github.com/fczuardi/roboviario">view source</a> -->

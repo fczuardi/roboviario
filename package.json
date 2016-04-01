@@ -14,7 +14,7 @@
     "build:html": "tasks/html.js",
     "prebuild:www": "npm run mkdir",
     "build:www": "npm-run-all --parallel cp:* build:html",
-    "ghpages": "gh-pages -d dist"
+    "ghpages": "gh-pages -d dist/www"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,78 @@
+body{
+    background-color: #333;
+}
+#main-app{
+    background-color: #666;
+    padding: 7px;
+}
+.message-list{
+    background-color: lightyellow;
+    padding: 7px;
+    margin: 0px;
+    margin-bottom: 7px;
+}
+.message-list .message-item{
+    position: relative;
+    padding-left: 50px;
+    padding-right: 7pxpx;
+    margin-bottom: 7px;
+    list-style: none;
+}
+.message-list .message-item .author{
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 2px #ccc;
+}
+.message-list .message-item.me .author{
+    display: none;
+    /*
+    left: auto;
+    right: 0px;
+    */
+}
+.message-list .message-item .author .user-icon{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+.message-list .message-item .message{
+    background-color: white;
+    padding: 7px;
+    display: table-cell;
+    box-shadow: 1px 1px 2px #ccc;
+    border: 1px solid #ccc;
+}
+.message-list .message-item.me .message{
+    float: right;
+    background-color: #d3f5c7;
+    border: 1px solid #a9c5a0;
+}
+.message-list .message-item.me:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.message-input{
+    position: relative;
+    padding-right: 50px;
+}
+.message-input .input-text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 100%;
+}
+.message-input .send-button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 0px none;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+}

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "http-server -p 9090 dist/www",
     "test": "npm run build:www",
+    "clean": "rm -rf dist",
     "mkdir": "tasks/mkdir.js",
     "cp:dotfiles": "tasks/dotfiles.js",
     "cp:fonts": "tasks/fonts.js",

@@ -36,9 +36,12 @@
                     type="submit" value="send" />
             </form>
         </div>
+        <script src="lib/js/uuid.js"></script>
         <script>
             console.log('foo');
             console.log(window.location.href);
+            var chatId = uuid.v4();
+            console.log(chatId);
         </script>
     </body>
 </html>

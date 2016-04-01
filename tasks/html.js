@@ -7,6 +7,7 @@ const mainCSS = cat([
     './src/css/main.css'
 ]);
 const iframeCSS = cat([
+    './dist/www/lib/css/normalize.css',
     './dist/www/lib/css/material-icons.css',
     './src/css/main.css',
     './src/css/chat.css'

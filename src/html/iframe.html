@@ -8,22 +8,33 @@
     </head>
     <body>
         <div id="main-app">
-            <div class="message-list">
-                <ol>
-                    <li class="message-item">
-                        <div class="author">
-                            <div class="user-icon">
-                                <i class="material-icons">directions_bus</i>
-                            </div>
+            <ol class="message-list">
+                <li class="message-item">
+                    <div class="author">
+                        <div class="user-icon material-icons">
+                            directions_bus
                         </div>
-                        <div class="message">
-                            <p>Hello World</p>
+                    </div>
+                    <div class="message">
+                        <p>Hello World</p>
+                    </div>
+                </li>
+                <li class="message-item me">
+                    <div class="author">
+                        <div class="user-icon material-icons">
+                            directions_bus
                         </div>
-                    </li>
-                </ol>
-            </div>
-            <div class="message-input">
-            </div>
+                    </div>
+                    <div class="message">
+                        <p>Foobar</p>
+                    </div>
+                </li>
+            </ol>
+            <form class="message-input">
+                <input type="text"  class="input-text" />
+                <input class="material-icons send-button"
+                    type="submit" value="send" />
+            </form>
         </div>
         <script>
             console.log('foo');

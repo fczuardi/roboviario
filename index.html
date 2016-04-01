@@ -59,8 +59,13 @@
     max-width: 600px;
     margin: auto;
 }
+#page-top{
+    height: 600px;
+    background-color: lightyellow;
+}
 
         </style>
+        <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         <script async src="https://cdn.ampproject.org/v0.js"></script>
     </head>
     <body>
@@ -68,9 +73,17 @@
             <h1>Demo</h1>
             <i class="material-icons">face</i>
             <i class="material-icons">directions_bus</i>
+            <div id="page-top">
+            </div>
+            <amp-iframe width=300 height=300
+                sandbox="allow-scripts allow-same-origin"
+                layout="responsive"
+                frameborder="0"
+                src="https://fczuardi.github.io/roboviario/iframe.html">
+            </amp-iframe>
             <footer>
                 <small>
-                    Copyright (c) Fabricio C Zuardi 2016 <a href="https://github.com/fczuardi/roboviario">view source</a>
+                    <!-- Copyright (c) Fabricio C Zuardi 2016 <a href="https://github.com/fczuardi/roboviario">view source</a> -->
                 </small>
             </footer>
         </div>

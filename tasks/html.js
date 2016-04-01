@@ -3,7 +3,8 @@ require('shelljs/global');
 const pkg = require('../package.json');
 
 const css = cat([
-    './dist/www/lib/css/material-icons.css'
+    './dist/www/lib/css/material-icons.css',
+    './src/css/main.css'
 ]);
 cp(
     './src/html/index.amp.html',

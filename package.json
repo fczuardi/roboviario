@@ -4,7 +4,17 @@
   "description": "A small demo of chat interface",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -p 9090 dist/www",
+    "test": "npm run build:www",
+    "mkdir": "tasks/mkdir.js",
+    "cp:fonts": "tasks/fonts.js",
+    "cp:img": "tasks/img.js",
+    "build:css": "tasks/css.js",
+    "prebuild:html": "npm run build:css",
+    "build:html": "tasks/html.js",
+    "prebuild:www": "npm run mkdir",
+    "build:www": "npm-run-all --parallel cp:* build:html",
+    "ghpages": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -26,6 +36,9 @@
   },
   "homepage": "https://github.com/fczuardi/roboviario#readme",
   "devDependencies": {
-    "material-design-icons": "^2.2.3"
+    "gh-pages": "^0.11.0",
+    "material-design-icons": "^2.2.3",
+    "npm-run-all": "^1.7.0",
+    "shelljs": "^0.6.0"
   }
 }
